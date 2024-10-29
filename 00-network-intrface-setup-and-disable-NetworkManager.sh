@@ -4,3 +4,6 @@ clear
 echo "------------"
 extra-files/generate_interfaces.pl 
 echo "------------"
+
+apt -y install ifupdown
+
