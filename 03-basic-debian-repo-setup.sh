@@ -19,4 +19,5 @@ echo "deb-src http://deb.debian.org/debian/ bookworm-updates main non-free-firmw
 
 apt update
 
-
+apt-get -y upgrade
+apt-get -y full-upgrade
