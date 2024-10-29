@@ -68,10 +68,9 @@ iface $interface inet static
 auto vmbr0
 iface vmbr0 inet static
         address 192.168.100.1/24
-#        gateway 192.168.29.1
-#        bridge-ports eno1
-#        bridge-stp off
-#        bridge-fd 0
+        bridge-ports none
+        bridge-stp off
+        bridge-fd 0
 
 # DNS settings (optional)
 #dns-nameservers 8.8.8.8 8.8.4.4
