@@ -7,5 +7,5 @@ echo "------------"
 
 echo "MAKE SURE YOU HAVE SET ROOT PASSWORD AND ABLE OT LOGIN VIA AWS SERIAL CONSOLE FOR TROUBLESHOOT IF NETWORK GOES AWAY"
 
-apt -y install ifupdown bridge-utils
+apt -y install ifupdown bridge-utils net-tools ethtool
 
