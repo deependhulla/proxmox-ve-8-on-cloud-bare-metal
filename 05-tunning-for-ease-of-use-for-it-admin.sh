@@ -1,8 +1,6 @@
 #!/bin/bash
 
-apt-get install -y whiptail
 
-whiptail --title "Check Your HostName and DateTime" --infobox "Please make sure your System Date Time is OK in Sync\n `date` \n\n Also Make sure hostname is set proper \n Host: `hostname -f`" 12 58
 
 
 ##disable ipv6 as most time not required
