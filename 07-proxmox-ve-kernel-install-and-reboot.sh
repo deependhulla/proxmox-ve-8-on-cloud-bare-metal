@@ -2,8 +2,8 @@
 
 apt update && apt full-upgrade
 
-apt install proxmox-default-kernel
+apt -y install proxmox-default-kernel
 
-systemctl reboot
+#systemctl reboot
 
 
