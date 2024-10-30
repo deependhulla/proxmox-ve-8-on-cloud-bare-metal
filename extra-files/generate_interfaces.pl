@@ -64,6 +64,7 @@ iface $interface inet static
     address $ip_address
     netmask $netmask
     gateway $gateway
+#Main Interface
 
 auto vmbr0
 iface vmbr0 inet static
@@ -71,9 +72,10 @@ iface vmbr0 inet static
         bridge-ports none
         bridge-stp off
         bridge-fd 0
+#Internal Network
 
-# DNS settings (optional)
-#dns-nameservers 8.8.8.8 8.8.4.4
+source /etc/network/interfaces.d/*
+
 END
 
     # Write to /etc/network/interfaces
