@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt update && apt full-upgrade
+apt update && apt -y full-upgrade
 
 apt -y install proxmox-default-kernel
 
