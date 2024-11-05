@@ -2,7 +2,11 @@
 
 
 
-apt-get install -y whiptail locales wget cloud-guest-utils fdisk parted
+apt-get install -y whiptail locales wget fdisk parted 
+
+## need to grow root disk  --eg -- growpart /dev/vda 1
+##apt-get install -y cloud-guest-utils cloud-initramfs-growroot
+
 whiptail --title "Check Your HostName and DateTime" --infobox "Please make sure your System Date Time is OK in Sync\n `date` \n\n Also Make sure hostname is set proper \n Host: `hostname -f`" 12 58
 
 # for Debian 12
