@@ -1,0 +1,22 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+
+auto lo
+iface lo inet loopback
+
+auto ens3
+iface ens3 inet static
+	address 10.0.0.2/24
+	gateway 10.0.0.1
+	mtu 9000
+	
+auto vmbr0
+iface vmbr0 inet static
+        address 192.168.100.1/24
+        bridge-ports none
+        bridge-stp off
+        bridge-fd 0
+#LAN 
+
+
+source /etc/network/interfaces.d/*
