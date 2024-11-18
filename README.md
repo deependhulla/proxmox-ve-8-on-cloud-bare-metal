@@ -21,39 +21,42 @@ The scripts automate critical setup steps, from configuring network interfaces t
 
 ## **Scripts Summary**
 
-1. **`01-network-interface-setup-and-disable-NetworkManager-and-timezone.sh`**  
-   - Sets up network interfaces, disables NetworkManager, and adjusts timezone to IST.  
+1. **`00-network-interface-setup-and-disable-NetworkManager.sh`**  
+   - Sets up network interfaces, disables NetworkManager.  
    - Enables root login via SSH (customizable).
 
-2. **`02-locales-setup-and-check-hostname-in-host-files.sh`**  
+2. **`01-locales-setup-and-check-hostname-in-host-files.sh`**  
    - Configures locales for `en_US.UTF-8`, ensures proper hostname settings, and checks system time.
 
-3. **`03-basic-debian-repo-setup-with-extra-repo.sh`**  
+3. **`02-time-zone-setup-to-IST.sh`**  
+   - Configures and adjusts timezone to IST, you can change this to your local timezone.
+
+4. **`03-basic-debian-repo-setup-with-extra-repo.sh`**  
    - Configures Debian repositories for `bookworm` and removes outdated repository settings.
 
-4. **`04-proxmox-development-repo-setup.sh`**  
+5. **`04-proxmox-development-repo-setup.sh`**  
    - Adds Proxmox VE repository for non-subscription packages and updates the system.
 
-5. **`05-tunning-for-ease-of-use-for-it-admin.sh`**  
+6. **`05-tunning-for-ease-of-use-for-it-admin.sh`**  
    - Includes:
      - Disabling IPv6 and enabling IPv4 forwarding.
      - Adding admin-friendly aliases and bashrc configurations.
      - Creating and enabling `rc.local` for startup scripts.
      - Configuring SSH keep-alive settings.
 
-6. **`06-update-microcode-for-cpu-updates.sh`**  
+7. **`06-update-microcode-for-cpu-updates.sh`**  
    - Installs CPU microcode updates for AMD and Intel processors.
 
-7. **`07-proxmox-ve-kernel-install-and-reboot.sh`**  
+8. **`07-proxmox-ve-kernel-install-and-reboot.sh`**  
    - Installs the Proxmox VE kernel and prepares for reboot.
 
-8. **`08-after-reboot-proxmox-packages-setup.sh`**  
+9. **`08-after-reboot-proxmox-packages-setup.sh`**  
    - Installs essential Proxmox packages like `postfix`, `wireguard`, and troubleshooting tools (e.g., `vnstat`, `ipmitool`).
 
-9. **`09-remove-old-debian-kernel.sh`**  
+10. **`09-remove-old-debian-kernel.sh`**  
    - Cleans up old Debian kernels to free space and streamline the boot process.
 
-10. **`10-multipath-tools-extra-packages.sh`**  
+11. **`10-multipath-tools-extra-packages.sh`**  
     - Installs `multipath-tools` and `open-iscsi` for improved storage configurations in Proxmox.
 
 ---
