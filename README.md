@@ -2,6 +2,8 @@
 
 This repository provides a streamlined setup for deploying Proxmox Virtual Environment (VE) 8 on Debian 12, particularly for cloud bare-metal environments like Oracle, AWS, or similar providers. The scripts include network configurations, repository updates, package installations, and system optimizations tailored to enhance the user experience and system performance.
 
+Medium article about setup : https://medium.com/@deependhulla/implementing-proxmox-ve-on-oracle-cloud-oci-a-comprehensive-guide-f66152a095a3
+
 ---
 
 ## **Overview**
