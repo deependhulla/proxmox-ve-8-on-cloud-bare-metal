@@ -78,5 +78,26 @@ The setup includes a wide range of utilities for system management and troublesh
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   cd /opt/
+   git clone https://github.com/deependhulla/proxmox-ve-8-on-cloud-bare-metal
+   cd proxmox-ve-8-on-cloud-bare-metal
+   ```
+
+2. Execute the scripts in sequence:
+   ```bash
+   chmod +x *.sh
+   ./00-network-interface-setup-and-disable-NetworkManager.sh
+   ./01-locales-setup-and-check-hostname-in-host-files.sh
+   ...
+   ./10-multipath-tools-extra-packages.sh
+   ```
+
+3. Reboot the system where required (e.g., after kernel installation).
+
+---
+
+## **Contributing**
+
+Contributions to improve the scripts or add features are welcome. Please submit pull requests or open issues for suggestions.
+
+---
